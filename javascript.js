@@ -1,4 +1,4 @@
-
+//Javascript file for HoracioCarrillo.me
 function validateForm()
 {
 	if(( document.getElementById("name").value == "") ||
