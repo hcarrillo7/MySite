@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+<head>
+	<title>Horacio Carrillo</title>
+	
+	
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js" ></script>
+	<script type="text/javascript" src="../javascript.js" ></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="../images/hc_icon.ico"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+
+<body>
+	<div class="masterContainer">
+		<div class="coverSection">
+			<div class="titleContainer-avt">
+		 <!-- Static navbar -->
+		      <nav class="navbar transparent navbar-inverse">
+		        <div class="container-fluid">
+		          <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		              <span class="sr-only">Toggle navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+		            <img class="siteLogo" src="../images/logo_hc.png">
+		          </div>
+		          <div id="navbar" class="navbar-collapse collapse">
+		            <ul class="nav navbar-nav">
+		              <li><a href="../index.html"><b>Home</b></a></li>
+		              <li><a href="../about.html"><b>About</b></a></li>
+		              <li class="dropdown active">
+		                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><b>Projects</b><span class="caret"></span></a>
+		                <ul class="dropdown-menu" role="menu">
+		                  <li class="dropdown-header">Websites</li>
+		                  <li><a href="../Websites/cougarpost.html">Cougar Post</a></li>
+		                  <li><a href="../Websites/carrilloconcreteinc.html">Carrillo Concrete, Inc.</a></li>
+		                  <li class="divider"></li>
+		                  <li class="dropdown-header">Other Software</li>
+		                  <li class="active"><a href="#">Adventures of Val and Tia</a></li>
+		                </ul>
+		              </li>
+		              <li><a href="../contact.html"><b>Contact</b></a></li>
+		            </ul>
+		          </div><!--/.nav-collapse -->
+		        </div><!--/.container-fluid -->
+		      </nav>
+
+			
+				<p class="pagetitle">Adventures of Val and Tia</p>
+				
+			</div>
+		</div>
+		<div class="container content">
+			<div class ="page_information coverPadding">
+			<p class="title padding10">The Gamer Inside...</p>
+				<p>Adventures of Val and Tia was a game created for my CS 485 Game Programming class. I had the pleasure to work with my two partners, Jessica Jones and Vincent Phongsamran. Coming into this class we had no experience or even a clue on how to make a video game but as the semester progressed the game began to come to life. All art was original for this game, including Textures, Characters and Animations along with all the code to make the game work as intended. The programming was done using C# and the art was created using Blender, everything finally came together using the Unity game engine.</p>
+				<p><b>Tools Used:</b> C#, Unity, MonoDevelop, Visual Studio, Blender</p>
+			</div>
+
+			<hr>
+
+			<div class="myInfo">
+				<p class="title padding10">Gameplay Images:</p>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-12"><img class="img-responsive" id="1" onclick="showImage(1)" src="../AVT/avt1.png"/></div>
+					<div class="col-md-4 col-sm-6 col-xs-12"><img class="img-responsive" id="2" onclick="showImage(2)" src="../AVT/avt2.png"/></div>
+					<div class="col-md-4 col-sm-6 col-xs-12"><img class="img-responsive" id="3" onclick="showImage(3)" src="../AVT/avt3.png"/></div>
+					<div class="col-md-4 col-sm-6 col-xs-12"><img class="img-responsive" id="4" onclick="showImage(4)" src="../AVT/avt4.png"/></div>
+					<div class="col-md-4 col-sm-6 col-xs-12"><img class="img-responsive" id="5" onclick="showImage(5)" src="../AVT/avt6.png"/></div>
+					<div class="col-md-4 col-sm-6 col-xs-12"><img class="img-responsive" id="6" onclick="showImage(6)" src="../AVT/avt7.png"/></div>
+					<div class="col-md-4 col-sm-6 col-xs-12"><img class="img-responsive" id="7" onclick="showImage(7)" src="../AVT/avt8.png"/></div>
+					<div class="col-md-4 col-sm-6 col-xs-12"><img class="img-responsive" id="8" onclick="showImage(8)" src="../AVT/avt10.png"/></div>
+				</div>
+			</div>
+
+
+			<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <img src="" id="imagepreview" style="width: 90%;">
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+
+			<br>
+			<hr>
+
+			<div class="myInfo">
+				<p class="title padding10">Download Game:</p>
+				<h3 class="textIndent">Coming Soon!</h3>
+			</div>
+		</div>	<!--Close Container-->
+	</div> <!--Close MasterContainer -->
+</body>
+
+</html>
+

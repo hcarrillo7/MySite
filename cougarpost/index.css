@@ -1,0 +1,61 @@
+#background
+{
+  position: fixed; 
+  bottom: 0; 
+  right: 0; 
+    
+  /* Preserve aspet ratio */ 
+  
+  min-height: 100%;
+  max-width: 100%;
+
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  
+}
+#login
+{
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, .7);
+
+    border-width:1px; 
+    border-style:outset;
+    border-radius: 5px;
+
+    padding-bottom: 20px;
+    position: absolute;
+
+    -webkit-animation: loginDrop 3s; 
+    animation: loginDrop 3s;
+    -webkit-animation-fill-mode: forwards;
+    
+
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes loginDrop {
+    0%   {left:15%; top: 0;}
+    100% {left:15%; top:250px;}
+
+}
+
+/* Standard syntax */
+@keyframes loginDrop {
+    0%   { left:15%; top:0px;}
+    100%  { left:15%; top:250px;}
+}
+.form-group
+{
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    padding: 5px;
+}
+.title
+{
+  font-weight: bold; 
+  color: #045FB4;
+}
+.jumbotron h1
+{
+  color: #045FB4 !important
+}

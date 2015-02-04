@@ -1,0 +1,135 @@
+Gmail account:
+
+email: cougarpost.group2@gmail.com
+password: ciscougar
+
+Project Name: Cougar Post
+Project ID: cougar-post
+
+Group 2 Password:
+KbsDJHJj
+
+
+(IGNORE)
+HARDCODED INFO WHICH IS NOT DYNAMICALLY PARSED:
+
+
+				<!--
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+					<div class="thumbnail mock">
+					    <img src="http://usa-rc.com/wp-content/uploads/2014/08/job-opportunities.jpg" alt="...">
+					    <div class="caption">
+					        <h3 id="post_title">Web Developers wanted!</h3>
+					        <p>Seeking Enthusiastic and Talented Web Developers for a part time opportunity at WebMasters Inc.</p>
+							<p>
+						        <a href="viewPost.html" class="btn btn-primary" role="button">View</a> 
+						        
+						    </p>
+					   	</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+					<div class="thumbnail" class="item">
+					    <img src="https://img0.etsystatic.com/009/0/5129215/il_570xN.455688144_8q5v.jpg" alt="...">
+					    <div class="caption">
+					        <h3 id="post_title">Let's go Hiking!</h3>
+					        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>
+						        <a href="#" class="btn btn-primary" role="button">View</a> 
+						    </p>
+					   	</div>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+					<div class="thumbnail">
+					    <img src="http://thepeoplesmovies.files.wordpress.com/2011/01/roommatecrop.jpg" alt="...">
+					    <div class="caption">
+					        <h3 id="post_title">Room Mate Wanted</h3>
+					        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>
+						        <a href="#" class="btn btn-primary" role="button">Button</a> 
+						        <a href="#" class="btn btn-default" role="button">Button</a>
+						    </p>
+					   	</div>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+					<div class="thumbnail">
+					    <img src="https://pbs.twimg.com/profile_images/1705337012/single11.jpg" alt="...">
+					    <div class="caption">
+					        <h3 id="post_title">Let's Date</h3>
+					        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>
+						        <a href="#" class="btn btn-primary" role="button">Button</a> 
+						        <a href="#" class="btn btn-default" role="button">Button</a>
+						    </p>
+					   	</div>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+					<div class="thumbnail">
+					    <img src="http://societysouth.com/content/uploads/2014/08/lLq2B1T.gif" alt="">
+					    <div class="caption">
+					        <h3 id="post_title">Let's Party!</h3>
+					        <p>Come party with Dan the man!</p>
+							<p>
+						        <a href="#" class="btn btn-primary" role="button">Button</a> 
+						        <a href="#" class="btn btn-default" role="button">Button</a>
+						    </p>
+					   	</div>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+					<div class="thumbnail">
+					    <img src="http://www.revolverfc.com/storage/fifex%20banner.jpg" alt="...">
+					    <div class="caption">
+					        <h3 id="post_title">Come Play Soccer!</h3>
+					        <p>Come join us every Friday to play soccer at the CSUSM main field. 5PM, bring cleats and friends!</p>
+							<p>
+						        <a href="#" class="btn btn-primary" role="button">Button</a> 
+						        <a href="#" class="btn btn-default" role="button">Button</a>
+						    </p>
+					   	</div>
+					</div>
+				</div>
+-->
+
+					<!--
+					<b>Comments:</b>
+					<ul class="img-comment-list" id="img-comment-list">
+						<li>
+							<div class="comment-img">
+								<img src="https://lh6.googleusercontent.com/-npf3mE_rgtE/AAAAAAAAAAI/AAAAAAAAEVs/tFUizaCR-g4/photo.jpg?sz=50">
+							</div>
+							<div class="comment-text">
+								<strong><a href="">Horacio Carrillo</a></strong>
+								<p>Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							</div>
+						</li>
+						<li>
+							<div class="comment-img">
+								<img src="https://lh6.googleusercontent.com/-npf3mE_rgtE/AAAAAAAAAAI/AAAAAAAAEVs/tFUizaCR-g4/photo.jpg?sz=50">
+							</div>
+							<div class="comment-text">
+								<strong><a href="">Jane Doe</a></strong>
+								<p>Hello this is a test comment and this comment is particularly very long and it goes on and on and on.</p> <span>on March 5th, 2014</span>
+							</div>
+						</li>
+
+						<li>
+							<div class="comment-img">
+								<img src="https://lh6.googleusercontent.com/-npf3mE_rgtE/AAAAAAAAAAI/AAAAAAAAEVs/tFUizaCR-g4/photo.jpg?sz=50">
+							</div>
+							<div class="comment-text">
+								<strong><a href="">Horacio Carrillo</a></strong>
+								<p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+							</div>
+						</li>
+						
+					</ul>
+				-->

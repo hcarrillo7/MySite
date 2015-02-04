@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cougar Post</title>
+		<meta charset = "utf-8" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="javascript.js" type="text/javascript"></script>
+		<script src="js/bootstrap.js" type="text/javascript"></script>	
+		<link href="index.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<img src = "backgroundImage.png" id="background">
+		<div class="jumbotron">	
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8" id="login">
+						<br>
+		<!--			<form role="form" name="loginForm" id="loginForm">
+						  	<div class="form-group">
+					    		<label for="email" >Email address</label> 
+					    		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email">
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+							</div>				
+						</form>	
+		-->				
+							<h1 class="title">Cougar Post</h1>
+							<p>
+							An exclusive opportunity to broadcast your Post to our California State University San Marcos community!
+							</p>
+
+							<button class="g-signin"
+						        data-scope="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.me https://www.googleapis.com/auth/plus.me https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.profile"
+						        data-clientid="570422962220-of9l45sun27cotavt0oa4rats5m5ocub.apps.googleusercontent.com"
+						        data-callback="onSignInCallback"
+						        data-theme="dark"
+						        data-cookiepolicy="single_host_origin"
+						        data-requestvisibleactions="http://schemas.google.com/AddActivity"
+						        data-width="wide">
+						    </button>						
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	<script type="text/javascript">
+	      (function() 
+	      {
+	       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	       po.src = 'https://apis.google.com/js/client:plusone.js';
+	       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	     })();
+    </script>
+    <script type="text/javascript">
+			function disconnectUser(access_token) {
+			  var revokeUrl = 'https://accounts.google.com/o/oauth2/revoke?token=' +
+			      access_token;
+
+			  // Perform an asynchronous GET request.
+			  $.ajax({
+			    type: 'GET',
+			    url: revokeUrl,
+			    async: false,
+			    contentType: "application/json",
+			    dataType: 'jsonp',
+			    success: function(nullResponse) {
+			      // Do something now that user is disconnected
+			      // The response is always undefined.
+			    },
+			    error: function(e) {
+			      // Handle the error
+			      // console.log(e);
+			      // You could point users to manually disconnect if unsuccessful
+			      // https://plus.google.com/apps
+			    }
+			  });
+			}
+			// Could trigger the disconnect on a button click
+			$('#revokeButton').click(disconnectUser);
+	</script>
+
+	</body>
+</html>

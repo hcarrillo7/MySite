@@ -1,0 +1,354 @@
+html 
+{
+  min-height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  background: url("http://i405.photobucket.com/albums/pp132/karilmoo/paisley/cork1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body 
+{
+  padding-top: 50px;
+  
+  max-width: 100%;
+  min-height: 100%;
+}
+.imageGrid
+{
+  width: 100%;
+  height: auto;
+}
+#profile #viewPostMainImage
+{
+  width: 100%;
+}
+#bulletins
+{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#post_title
+{
+  color: #299B80;
+}
+
+
+.navbar-custom {
+    background-color:#113D69;
+    color:#ffffff;
+    border-radius:1px;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:#113d69;
+}
+.nav > li > a:hover, .nav > li > a:focus
+{
+  background-color: #113d69;
+  color: #113d69;
+}
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+#dropdowns
+{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5px;
+} 
+.dropdownTitle
+{
+  color: white;
+  font-weight: bold;
+}
+
+.masterContainer
+{
+  position: absolute;
+  background: rgb(55, 137, 181); /* Fall-back for browsers that don't support rgba */
+  background: rgba(55, 137, 181, .7);
+  min-width: 100%;
+  max-width: 100%;
+  /*padding-bottom: 60px; */
+  min-height: 100%;
+  padding-top: 5px;
+}
+
+.footer
+{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+  background-color: #37B696;
+}
+.siteLogo
+{
+  margin-top: 0px;
+  height: 200%;
+  width: auto;
+}
+@media screen and (max-width : 760px) {
+    .siteLogo 
+    {
+        margin-top: -18px;
+    }
+    .footer
+    {
+        position: fixed;
+        bottom: -60px;
+    }
+}
+.row
+{
+  max-width: 100%;
+}
+.credit 
+{
+  padding-top: 20px;
+  color: white;
+  bottom: 7%;
+}
+#collapseButton
+{
+  background-color: white;
+  color: white;
+}
+#profilePic
+{
+  border-radius: 50%;
+  padding-top: 5%;
+  height: 48px;
+
+}
+
+img.enterPhoto
+{
+  display: block;
+  margin: auto;
+}
+.thumbnail .mock
+{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.img-comment-list {
+    list-style: none;  
+    padding: 0;
+}
+.img-comment-list li {
+    margin:0;
+    margin-top:10px;
+}
+
+.img-comment-list li > div {
+    display:table-cell;
+}
+
+.img-comment-list img {
+    border-radius:50%;
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.img-comment-list p {
+    margin: 0;
+}
+
+.img-comment-list span {
+    font-size: .8em; 
+    color: #aaa;
+}
+.authorizeStuff
+{
+  display: none; /* change to display: none or block; to toggle visibility */
+}
+.container.bodyPadding
+{
+  padding-bottom: 60px;
+}
+.commentBox
+{
+ padding-top:15px; 
+}
+.pageTitle
+{
+  color: white;
+}
+.imagePreviewIcon
+{
+  height: 50px;
+  width: auto;
+  display: none;
+}
+.container.viewPost
+{
+  position: relative;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+.container.createPost
+{
+  padding-bottom: 60px;
+}
+.createPosterName.text-info
+{
+  padding-left: 15px;
+  font-weight: bold;
+}
+#viewPostMainImage
+{
+  border-radius: 10%;
+  width: 100%;
+}
+.showPostImages
+{
+  width:32%;
+  height: auto;
+}
+#showposterImage
+{
+  border-radius: 50%;
+}
+.aboutUsSpanGray
+{
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #D8D8D8;
+  margin: -15px;
+}
+.aboutUsSpanWhite
+{
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  margin: -15px;
+  
+}
+
+.ourStoryImg
+{
+  padding: 25px;
+  width: 100%;
+  height: auto;
+}
+.paddingLeft
+{
+  margin-left: 25px;
+}
+.aboutUsText
+{
+  padding-top: 50px;
+}
+.editPostBtn
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+NAVBAR.TOGGLE collapsed menu must be changed in Bootstrap file.. icon-bar was 
+changed to white and border is set to white, both from transparent
+*/
+
+
+
+.item 
+{
+ display: inline-block;
+ padding:  .25rem;
+ width:  100%; 
+  margin-top: 15px;
+}
+*, *:before, *:after {box-sizing:  border-box !important;}
+.rowpost {
+   -moz-column-width: 20em;
+   -webkit-column-width: 20em;
+   -moz-column-gap: 3em;
+   -webkit-column-gap:3em; 
+}
+
+
+
+.dumbBoxWrap 
+{ 
+  /* The div that shows/hides. */ 
+  display:none; /* starts out hidden */ 
+  position:absolute; 
+  top: 0;
+  left: 0;
+  z-index:40001; /* High z-index to ensure it appears above all content */ 
+}
+.dumbBoxOverlay 
+{ 
+  /* Shades out background when selector is active */ 
+  position:fixed; 
+  width:100%; 
+  height:100%; 
+  background-color:black; 
+  opacity:.97; /* Sets opacity so it's partly transparent */ 
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE transparency */ 
+  filter:alpha(opacity=50); /* More IE transparency */ 
+  z-index:40001; 
+}
+
+.vertical-offset 
+{ 
+  /* Fixed position to provide the vertical offset */ 
+  position:fixed; 
+  top:30%; 
+  width:100%; 
+  z-index:40002; /* ensures box appears above overlay */ 
+}
+.dumbBox { 
+  /* The actual box, centered in the fixed-position div */ 
+  width:405px; /* Whatever width you want the box to be */ 
+  position:relative; margin:0 auto; /* Everything below is just visual styling */ 
+  background-color:white; 
+  padding:10px; 
+  border-radius: 15px;
+}
+
+#modalLogout
+{
+  margin-right: 5px;
+}
+
+.styled-select {
+   height: 29px;
+   overflow: hidden;
+   width: 180px;
+   margin: 10px;
+}
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 180px;
+   margin-right: 10px;
+}
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+.blue    { background-color: white; }
+.blue select    { color: #000; }
+
+.applyBTN
+{
+  margin: 10px;
+}

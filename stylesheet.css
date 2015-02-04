@@ -1,0 +1,348 @@
+.titleContainer
+{
+  padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	text-align: center;
+	background: url("images/woodbg.jpg") no-repeat; 
+  background-size:100%;
+  -webkit-filter: grayscale(65%);
+  -moz-filter: grayscale(65%);
+  -ms-filter: grayscale(65%);
+  -o-filter: grayscale(65%);
+  filter: grayscale(65%);
+  height: auto;
+  display: block;
+  overflow: no;
+  padding-bottom: 10%;
+  overflow: auto;
+}
+.titleContainer-cci
+{
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+  background: url("images/concretebg2.jpg") no-repeat; 
+  background-size:100%;
+  -webkit-filter: grayscale(50%);
+  -moz-filter: grayscale(50%);
+  -ms-filter: grayscale(50%);
+  -o-filter: grayscale(50%);
+  filter: grayscale(50%);
+  height: auto;
+  display: block;
+  overflow: no;
+  padding-bottom: 10%;
+}
+.titleContainer-cp
+{
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+  background: url("images/bulletinbg.png") no-repeat; 
+  background-size:100%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(50%);
+  -ms-filter: grayscale(50%);
+  -o-filter: grayscale(50%);
+  filter: grayscale(100%);
+  height: auto;
+  display: block;
+  overflow: no;
+  padding-bottom: 10%;
+}
+.titleContainer-avt
+{
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+  background: url("images/avtbg.jpg") no-repeat; 
+  background-size:100%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(50%);
+  -ms-filter: grayscale(50%);
+  -o-filter: grayscale(50%);
+  filter: grayscale(100%);
+  height: auto;
+  display: block;
+  overflow: no;
+  padding-bottom: 10%;
+}
+.titleContainer-cp:after
+{
+  -webkit-filter: brightness(20%) grayscale(100%);
+}
+.pagetitle
+{
+ 	font-size: 10vw;
+	font-family: 'Fjalla One', sans-serif;
+  margin-top: 0px;
+  padding-top: 12%;
+}
+.comingSoon
+{
+  font-size: 3vw;
+  font-family: 'Fjalla One', sans-serif;
+  color: red;
+}
+.coverSection
+{
+  display: block;
+  height: 100%;
+}
+.content
+{
+  display: block;
+  background-color: white;
+  position: relative;
+
+}
+.pageInfo
+{
+  display: block;
+}
+
+@media only screen and (max-width : 480px) {
+    .content 
+    {
+        text-align: center
+    }
+    .textIndent
+    {
+      text-indent: 0px !important;
+      font-family: 'Lato', sans-serif;
+    }
+    .divIndent
+    {
+      padding-left: 0px !important;
+    }
+    .title
+    {
+      font-size: 1.25em !important;
+    }
+    .siteLogo
+    {
+      margin-right: 0px;
+    }
+    .coverPadding
+    {
+      padding-top: 10px !important;
+    }
+    .myContactInfo
+    {
+      margin-right: 0px !important;
+    }
+}
+
+.title
+{
+  font-size: 25px;
+  font-family: 'Fjalla One', sans-serif;
+  color: black;
+}
+.bodyText
+{
+  font-size: 1.5vw;
+  font-family: 'Fjalla One', sans-serif;
+  color: black;
+}
+.padding10
+{
+  padding-top: 10px;
+}
+.divIndent
+{
+  padding-left: 50px;
+}
+.textIndent
+{
+  text-indent: 50px;
+  font-family: 'Lato', sans-serif;
+}
+.profilePic
+{
+  height: 300px;
+  border-radius: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.profile
+{
+  text-align: center;
+}
+.container.content
+{
+  padding-bottom: 20px;
+}
+.navbarLink
+{
+  color: white;
+}
+.siteLogo
+{
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-right: 150px;
+  margin-left: 25px;
+  border-radius: 5px;
+}
+.navbar.transparent.navbar-inverse {
+   background: rgba(0,0,0,0);
+}
+.navbar
+{
+  border: 0px;
+}
+.navbar-inverse .navbar-nav > li > a 
+{
+  color: white;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus 
+{
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 10px;
+}
+.navbar-inverse .navbar-nav > li > a
+{
+  border-radius: 10px; 
+}
+.screenshot
+{
+  width: 100%;
+  height: auto;
+}
+
+.lineSpacePadding
+{
+  margin-bottom: 0px;
+}
+.trifold
+{
+  width: 33.333%;
+  height: 33.33vw;
+  color: white;
+}
+.projectsDiv
+{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.project1:before
+{
+  content:"";
+  background-image: url("images/screenshot_cougarpost.png");
+  background-position: center;
+  z-index: -1;
+  -webkit-filter: blur(2px)  grayscale(100%);
+  -moz-filter: blur(2px) grayscale(100%);
+  -o-filter: blur(2px) grayscale(100%);
+  -ms-filter: blur(2px) grayscale(100%);
+
+}
+.project1
+{
+  float: left;
+  padding: 15px;
+  margin: 0px;
+}
+
+.project2:before
+{
+  background-image: url("images/screenshot_carrilloconcrete.png");
+  background-position: center;
+  -webkit-filter: blur(2px)  grayscale(100%);
+  -moz-filter: blur(2px) grayscale(100%);
+  -o-filter: blur(2px) grayscale(100%);
+  -ms-filter: blur(2px) grayscale(100%);
+}
+.project2
+{
+  float: left;
+  padding: 15px;
+  margin: 0px;
+}
+.project3:before
+{
+ 
+  background-image: url("images/screenshot_cougarpost.png");
+  background-position: center;
+  -webkit-filter: blur(2px)  grayscale(100%);
+  -moz-filter: blur(2px) grayscale(100%);
+  -o-filter: blur(2px) grayscale(100%);
+  -ms-filter: blur(2px) grayscale(100%);
+}
+.project3
+{
+  float: left;
+  padding: 15px;
+  margin: 0px;
+}
+.coverPadding
+{
+  padding-top: 100px;
+}
+.page_information
+{
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+}
+.img-responsive
+{
+  padding-bottom: 20px;
+}
+.imagepreview
+{
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .modal-dialog 
+  {
+    width: 1000px;
+    margin: 100px auto;
+  }
+  .nav.navbar-nav
+  {
+    background-color: transparent !important;
+  }
+}
+.modal-backdrop.in 
+{
+  filter: alpha(opacity=90);
+  opacity: .9;
+}
+.spacing
+{
+  padding-bottom: 15px;
+}
+.dropdown-menu
+{
+  background-color: rgba(255,255,255,0.6);
+  color: white !important;
+}
+.nav.navbar-nav
+{
+  background-color: black;
+}
+.myContactInfo
+{
+  background-color: #D8D8D8;
+  height: 100%;
+  font-size: .75em;
+  border-radius: 25px;
+  padding: 10px;
+  margin-right: -12px;
+  
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cougar Post - Edit Post</title>
+		<meta charset = "utf-8" />
+		<link href="stylesheet.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="javascript.js" type="text/javascript"></script>
+		<script src="js/bootstrap.js"></script>	
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body onload="PostEditGetData()">
+
+
+    <script type="text/javascript">
+      // Enter a client ID for a web application from the Google Developer Console.
+      // The provided clientId will only work if the sample is run directly from
+      // https://google-api-javascript-client.googlecode.com/hg/samples/authSample.html
+      // In your Developer Console project, add a JavaScript origin that corresponds to the domain
+      // where you will be running the script.
+      var clientId = '570422962220-of9l45sun27cotavt0oa4rats5m5ocub.apps.googleusercontent.com';
+
+      // Enter the API key from the Google Develoepr Console - to handle any unauthenticated
+      // requests in the code.
+      // The provided key works for this sample only when run from
+      // https://google-api-javascript-client.googlecode.com/hg/samples/authSample.html
+      // To use in your own application, replace this API key with your own.
+      var apiKey = 'AIzaSyCb1WQdgCZ9-2k9b4zpTwVNJNEj3bV5mRw';
+
+      // To enter one or more authentication scopes, refer to the documentation for the API.
+      var scopes = 'https://www.googleapis.com/auth/plus.me https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.profile';
+
+      // Use a button to handle authentication the first time.
+      function handleClientLoad() {
+        gapi.client.setApiKey(apiKey);
+        window.setTimeout(checkAuth,1);
+      }
+
+      function checkAuth() {
+        gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: true}, handleAuthResult);
+      }
+
+
+      function handleAuthResult(authResult) {
+        var authorizeButton = document.getElementById('authorize-button');
+        if (authResult && !authResult.error) {
+          authorizeButton.style.visibility = 'hidden';
+          makeApiCall();
+        } 
+        else {
+          authorizeButton.style.visibility = '';
+          authorizeButton.onclick = handleAuthClick;
+        }
+      }
+
+      function handleAuthClick(event) {
+        gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
+        return false;
+      }
+
+      function logResponse (resp)
+      {
+      		console.log(resp);
+      }
+
+      // Load the API and make an API call.  Display the results on the screen.
+      function makeApiCall() {
+        gapi.client.setApiKey(""); //NEW
+        gapi.client.load('plus', 'v1', function() 
+        {
+          	var request = gapi.client.plus.people.get({'userId': 'me'});
+
+	        request.execute(function(logResponse) 
+    	    {
+        	  	document.getElementById('name').value = logResponse.displayName;
+        	  	document.getElementById('profilePic').src = logResponse.image.url;
+        	  	userName.innerText = logResponse.displayName;
+        	  	document.getElementById('imageURLbox').value = logResponse.image.url;
+
+          		//document["profilePic"].src = imageURL;
+          		console.log(logResponse);
+          	});
+        });
+
+        gapi.client.load('oauth2', 'v2', function()
+        {
+        	var request = gapi.client.oauth2.userinfo.get();
+
+        	request.execute(function(logResponse)
+        	{
+        		document.getElementById('email').value = logResponse.email;
+        		document.getElementById('verified_email').value = logResponse.verified_email;
+        		document.getElementById('ext_id').value = logResponse.id;
+        		console.log(logResponse.email);
+        		console.log(logResponse.id);
+        	});
+        });
+
+        
+      }
+    </script>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+				<!--- NAVBAR BEGIN -->				
+				<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+				 <div class="container">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#what">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a class="navbar-brand" href="welcome.html"><img src="logo.png" class="siteLogo" alt="Cougar Post"/></a>
+					    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="what">
+					    <ul class="nav navbar-nav">
+					        <li><a href="welcome.html">Home</a></li>
+					        <li><a href="createPost.html">Create Post</a></li>
+					        <li><a href="aboutUs.html">About Us</a></li>
+					    </ul>
+					    <ul class="nav navbar-nav navbar-right">
+			            	<li class="active"><img src="" id="profilePic" alt=':)'></li>
+			            	<li class="active"><a id="userName"></a></li>
+			            	<li><a href="javascript:signout()">Sign Out</a></li>
+			            </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</div>
+				</nav> <!-- NAVBAR END -->
+				
+
+<div class="masterContainer">
+		<div class="container createPost">
+			<h1 class="pageTitle" id="postTitle"><strong>Edit Post</strong></h1>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="http://www.pjrc.com/mp3/gallery/empty.gif" alt="..." class="enterPhoto" id="imagePreview">
+					    <form>
+							<!-- URL input-->
+							<div class="form-group">
+							  	<label for="urlinput">Enter Image URL:</label>  
+							  	<input id="urlinput" name="urlinput" type="text" placeholder="Image URL" class="form-control" onchange="previewImage(0);">
+							  	<div class="text-danger">*Preview same as will appear on post. Please ensure correct link.</div>
+							</div>	
+
+							<!-- Text input-->
+							<div class="form-group">
+							  	<label for="nameinput">Title</label>  
+							  	<input id="nameinput" name="nameinput" type="text" placeholder="Post Title" class="form-control">
+							</div>
+
+							<!-- Textarea -->
+							<div class="form-group">
+							  	<label for="textarea">Brief Description</label>
+							  	<div class="required-field-block">
+            						<textarea id="postBriefDesc" rows="3" class="form-control" placeholder="Brief Description"></textarea>
+	            					<div class="text">Max 160 characters</div>
+        						</div>
+							</div>
+						</form>
+					</div>
+				</div> <!--close column -->
+
+				<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12"> <!-- 2/3rds split. details post -->
+					<div class="thumbnail">
+						<form>
+							<!-- Textarea -->
+							<div class="form-group">
+							  	<label for="textarea">Full Description</label>
+							  	<div class="required-field-block">
+            						<textarea id="postFullDesc" rows="5" class="form-control" placeholder="Full Details"></textarea>
+	            				</div>
+							</div>
+							<!-- More Images -->
+							<div class="form-group">
+							  	<label for="urlinput">Additional Images:</label>  
+							  	<input id="urlinput1" name="urlinput" type="text" placeholder="Enter image URL" class="form-control" onchange="previewImage(1)">
+							  	<div class="additionalImagePreview"><img src="/group2/images/emptyprofile.png" alt="..." id="imagePreview1" class="imagePreviewIcon" /></div></br>
+							  	<input id="urlinput2" name="urlinput" type="text" placeholder="Enter image URL" class="form-control" onchange="previewImage(2)">
+							  	<div class="additionalImagePreview"><img src=""/group2/images/emptyprofile.png"" alt="..." id="imagePreview2" class="imagePreviewIcon"/></div></br>
+							  	<input id="urlinput3" name="urlinput" type="text" placeholder="Enter image URL" class="form-control" onchange="previewImage(3)">
+							  	<div class="additionalImagePreview"><img src=""/group2/images/emptyprofile.png"" alt="..." id="imagePreview3" class="imagePreviewIcon"/></div></br>
+							</div>
+
+							<button type="button" role="button" class="btn btn-success btn-lg" onclick="PostEditSaveData()">Finish Edit</button>
+						</form>
+					</div>
+				</div> <!--close column -->
+
+			</div> <!-- close ROW -->
+		
+
+
+    		<div class="authorizeStuff">
+    			<button id="authorize-button" style="visibility: hidden">Authorize</button>
+    			<label for="email">Email:</label> <input type="text" id='email'><br>
+    			Verified Email: <input type="text" id='verified_email'><br>
+    			ID: <input type="text" id='ext_id'><br>
+    			Display Name: <input type="text" id='name'><br>
+    			Image URL: <input type="text" id='imageURLbox'><br>
+    			<button class="btn btn-classic" id="revokeButton">Revoke</button>
+    		</div>
+
+    	</div> <!-- Close Container -->
+</div> <!-- Close Master Container -->
+
+	<div class="footer">
+		<div class="container">
+			<p class="credit"><strong>&#169; Cougar Post</strong> - CSUSM CIS 444 Fall 2014 - <strong>Group 2</strong></p>
+		</div>
+	</div>
+
+<!--
+
+	<script type="text/javascript">
+	      (function() 
+	      {
+	       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	       po.src = 'https://apis.google.com/js/client:plusone.js';
+	       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	     })();
+    </script>
+
+
+-->
+</body>
+</html>

@@ -1,0 +1,83 @@
+var commentInfo={"comments":[
+    {    
+        "name": "Horacio Carrillo",
+        "picture": "https://lh6.googleusercontent.com/-npf3mE_rgtE/AAAAAAAAAAI/AAAAAAAAEVs/tFUizaCR-g4/photo.jpg?sz=50",
+        "comment": "Today is a very good day",
+        "date": "March 5th, 2014"
+    },
+    {    
+        "name": "Harry Potter",
+        "picture": "https://pbs.twimg.com/profile_images/440543002780372992/6tbFBP4R.jpeg",
+        "comment": "Comments being fed via JSON file",
+        "date": "May 5th, 2014"
+    },
+    {    
+        "name": "Horacio Carrillo",
+        "picture": "https://lh6.googleusercontent.com/-npf3mE_rgtE/AAAAAAAAAAI/AAAAAAAAEVs/tFUizaCR-g4/photo.jpg?sz=50",
+        "comment": "and dynamically added on page load",
+        "date": "October 5th, 2014"
+    },
+]}
+
+var postInfo={"posts":[
+    {    
+        "name": "WebDeveloperswanted",
+        "title": "Web Developers wanted!",
+        "picture": "http://usa-rc.com/wp-content/uploads/2014/08/job-opportunities.jpg",
+        "briefDescription": "Seeking Enthusiastic and Talented Web Developers for a part time opportunity at WebMasters Inc.",
+        "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula malesuada eros. Donec vitae mattis lorem. Donec eu faucibus libero. Fusce ac egestas justo, et cursus magna. Donec et consectetur sapien. Fusce eget malesuada mauris. Morbi maximus nisi libero, sit amet facilisis purus convallis eget. Phasellus dapibus enim ac dolor cursus vehicula. Nullam et lacus neque. Maecenas sodales ornare eros, et lobortis ante. Aenean venenatis porta purus tempus volutpat. Vivamus eu velit ut tellus sodales rutrum quis at augue. Pellentesque tristique magna non ex mollis, dictum luctus nibh consequat.",
+        "alternateImage1": "http://www.cpl.ie/blog/wp-content/uploads/2012/03/Cool-Jobs-Image3.jpg",
+        "alternateImage2": "http://www.justchecking.co.uk/wp-content/uploads/2011/10/developers-wanted.jpeg",
+        "alternateImage3": "http://www.entrepreneur.com/dbimages/slideshow/bzzagent.jpg"
+    },
+    {    
+        "name": "LetsgoHiking",
+        "title": "Let's go Hiking!",
+        "picture": "https://img0.etsystatic.com/009/0/5129215/il_570xN.455688144_8q5v.jpg",
+        "briefDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula malesuada eros. Donec vitae mattis lorem. Donec eu faucibus libero. Fusce ac egestas justo, et cursus magna. Donec et consectetur sapien. Fusce eget malesuada mauris. Morbi maximus nisi libero, sit amet facilisis purus convallis eget. Phasellus dapibus enim ac dolor cursus vehicula. Nullam et lacus neque. Maecenas sodales ornare eros, et lobortis ante. Aenean venenatis porta purus tempus volutpat. Vivamus eu velit ut tellus sodales rutrum quis at augue. Pellentesque tristique magna non ex mollis, dictum luctus nibh consequat.",
+        "alternateImage1": "http://photos2.meetupstatic.com/photos/event/a/7/f/a/600_369403002.jpeg",
+        "alternateImage2": "http://adventured.com/wp-content/uploads/hike.jpeg",
+        "alternateImage3": "http://www.travelingmyself.com/wp-content/uploads/2013/04/Potato-Chip-Rock-Without-People.jpg"
+    },
+    {    
+        "name": "RoomMateWanted",
+        "title": "Room Mate Wanted",
+        "picture": "http://thepeoplesmovies.files.wordpress.com/2011/01/roommatecrop.jpg",
+        "briefDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula malesuada eros. Donec vitae mattis lorem. Donec eu faucibus libero. Fusce ac egestas justo, et cursus magna. Donec et consectetur sapien. Fusce eget malesuada mauris. Morbi maximus nisi libero, sit amet facilisis purus convallis eget. Phasellus dapibus enim ac dolor cursus vehicula. Nullam et lacus neque. Maecenas sodales ornare eros, et lobortis ante. Aenean venenatis porta purus tempus volutpat. Vivamus eu velit ut tellus sodales rutrum quis at augue. Pellentesque tristique magna non ex mollis, dictum luctus nibh consequat.",
+        "alternateImage1": "http://cdn2.hellogiggles.com/wp-content/uploads/2012/11/21/steve.jpg",
+        "alternateImage2": "http://hope.edu/student/residential_11_18_13/needaroommate/Need-a-roommate-sm.jpg",
+        "alternateImage3": "https://survivecollegetoday.files.wordpress.com/2013/10/well-perfect-roommates-college-ecard-someecards.jpg"
+    },
+    {    
+        "name": "LetsDate",
+        "title": "Let's Date",
+        "picture": "https://pbs.twimg.com/profile_images/1705337012/single11.jpg",
+        "briefDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula malesuada eros. Donec vitae mattis lorem. Donec eu faucibus libero. Fusce ac egestas justo, et cursus magna. Donec et consectetur sapien. Fusce eget malesuada mauris. Morbi maximus nisi libero, sit amet facilisis purus convallis eget. Phasellus dapibus enim ac dolor cursus vehicula. Nullam et lacus neque. Maecenas sodales ornare eros, et lobortis ante. Aenean venenatis porta purus tempus volutpat. Vivamus eu velit ut tellus sodales rutrum quis at augue. Pellentesque tristique magna non ex mollis, dictum luctus nibh consequat.",
+        "alternateImage1": "http://silvieandmaryl.com/wp-content/uploads/2010/08/Spiritual-Dating.jpg",
+        "alternateImage2": "http://cdn.someecards.com/someecards/filestorage/someone-no-time-to-date-flirting-ecards-someecards.png",
+        "alternateImage3": "http://thirtyorsomething.com/wp-content/uploads/2014/05/OnlineDating1.jpg"
+    },
+    {    
+        "name": "LetsParty",
+        "title": "Let's Party!",
+        "picture": "http://societysouth.com/content/uploads/2014/08/lLq2B1T.gif",
+        "briefDescription": "Come party with Dan the man!",
+        "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula malesuada eros. Donec vitae mattis lorem. Donec eu faucibus libero. Fusce ac egestas justo, et cursus magna. Donec et consectetur sapien. Fusce eget malesuada mauris. Morbi maximus nisi libero, sit amet facilisis purus convallis eget. Phasellus dapibus enim ac dolor cursus vehicula. Nullam et lacus neque. Maecenas sodales ornare eros, et lobortis ante. Aenean venenatis porta purus tempus volutpat. Vivamus eu velit ut tellus sodales rutrum quis at augue. Pellentesque tristique magna non ex mollis, dictum luctus nibh consequat.",
+        "alternateImage1": "http://www.dmvfollowers.com/wp-content/uploads/2014/05/alcohol-bar-liquor-party-vodka-Favim.com-300906.jpg",
+        "alternateImage2": "http://www.ripleypatton.com/wp-content/uploads/2013/09/lets_party_title.png",
+        "alternateImage3": "http://dyersoundworks.com/wp-content/uploads/2014/05/photodune-2755655-party-time-m.jpg"
+    },
+    {    
+        "name": "ComePlaySoccer",
+        "title": "Come Play Soccer!",
+        "picture": "http://www.revolverfc.com/storage/fifex%20banner.jpg",
+        "briefDescription": "Come join us every Friday to play soccer at the CSUSM main field. 5PM, bring cleats and friends!",
+        "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula malesuada eros. Donec vitae mattis lorem. Donec eu faucibus libero. Fusce ac egestas justo, et cursus magna. Donec et consectetur sapien. Fusce eget malesuada mauris. Morbi maximus nisi libero, sit amet facilisis purus convallis eget. Phasellus dapibus enim ac dolor cursus vehicula. Nullam et lacus neque. Maecenas sodales ornare eros, et lobortis ante. Aenean venenatis porta purus tempus volutpat. Vivamus eu velit ut tellus sodales rutrum quis at augue. Pellentesque tristique magna non ex mollis, dictum luctus nibh consequat.",
+        "alternateImage1": "https://pbs.twimg.com/profile_images/517753249160388608/YU_QjYCp.png",
+        "alternateImage2": "http://miamibeachchamber.files.wordpress.com/2014/06/alexmorgangetty.jpg",
+        "alternateImage3": "http://k16.kn3.net/taringa/2/7/1/6/6/1/3/cardanvp/1DC.gif"
+    },
+]}
